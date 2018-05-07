@@ -1,5 +1,15 @@
-var arr1 = [];
-var arr2 = [1, 2, 3, 4, 5];
-var arr3 = [1, "string", true, {x:1, y:3}, [1, 2]];
-var arr4 = new Array();
-arr4[0] = "array-4";
+var arr1 = [77, 88, 99, 100];
+console.log(arr1.sort());
+
+function ascendingNumber(a, b){
+  return a - b;
+}
+
+function descendingNumber(a, b){
+  return b - a;
+}
+
+console.log(arr1.sort(ascendingNumber));
+console.log(arr1.sort(descendingNumber));
+
+console.log(arr1.sort(function(a, b) {return a-b;}));
